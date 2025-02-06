@@ -51,3 +51,23 @@ def mutilpy_by_hundred(prediction1, prediction2, prediction3):
 predictions= mutilpy_by_hundred(0.7598, 0.9876, 0.679)
 
 print(predictions)
+
+print("-------------------------------------")
+
+# Returning Multiple Values
+def raise_two(value1, value2):
+    """Raise value1 to the power of value2 and vice versa"""
+    new_value1 = value1 ** value2
+    new_value2 = value2 ** value1
+
+    new_tuple = (new_value1, new_value2)
+
+    return new_tuple
+
+result = raise_two(4, 5)
+
+print(result)
+
+print("-------------------------------------")
+
+print(type(result))
