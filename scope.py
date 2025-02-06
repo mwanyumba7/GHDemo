@@ -82,7 +82,37 @@ print(mod2plus5_1(9,11,30))
 
 print("-------------------------------------")
 
-#Assignment 
+#Assignment  - Nathan
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Ruri
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Ryan
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Abdhullahi
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Bethany
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Reagan
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - John
 #1. Look into default and Flexible arguments in functions
 #2. In flexible arguments look into *args and **kwargs
 #3. Look into Lambda Functions
