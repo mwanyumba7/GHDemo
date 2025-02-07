@@ -128,8 +128,8 @@ DS_students(student2 = "John", student1 = "Ryan", student3 = "Gichia")
 A lambda function is a small, anonymous function that can have any number of arguments but only one expression.
 The syntax is lambda arguments : expression
 """
-#The exponential function raises y to power x and adds the product of yx using the lambda function
-Exponential_function = lambda x,y: y ** x + y*x
+#The exponential function raises y to power x and adds the product of yx and 5 using the lambda function
+Exponential_function = lambda x,y: y ** x + y*x + 5 
 print(Exponential_function(5,6))
 
 #A lambda function using 4 arguments
