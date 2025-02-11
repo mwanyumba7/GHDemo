@@ -82,7 +82,64 @@ print(mod2plus5_1(9,11,30))
 
 print("-------------------------------------")
 
-#Assignment 
+#Assignment  - Nathan
+#1. Look into default and Flexible arguments in functions
+#Default arguements
+#Default arguements
+"""used to simplify function by assigning default values to parameters with similar arguements"""
+
+def selling_price(buying_price,discount=0,tax=50):
+    """finding net price by adding tax to buying price and subtracting discount"""
+    costing=(buying_price + tax - discount)
+    return costing
+print(selling_price(300,10))
+
+#'Arg'
+#'Arg' allows passing of multiple non key elements
+def add(*nums):
+    """summing multiple non key tuple element"""
+    total=0 #initializing
+    for num in nums:
+        total += num
+        return total
+print (add(90,76,93,71,15,83))
+
+#**kwarg
+#'**kwarg' allows passing of multiple ky words arguements
+def traffic_light(**kwargs):
+    """Assigning traffic light colours to expected action"""
+    traffic_light={red:"stop"
+    ,yellow:"get_ready"
+    ,green:"go"}
+    for key,value in kwargs.items():
+        print (key)
+
+#Assignment  - Ruri
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Ryan
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Abdhullahi
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Bethany
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - Reagan
+#1. Look into default and Flexible arguments in functions
+#2. In flexible arguments look into *args and **kwargs
+#3. Look into Lambda Functions
+
+#Assignment  - John
 #1. Look into default and Flexible arguments in functions
 #2. In flexible arguments look into *args and **kwargs
 #3. Look into Lambda Functions
