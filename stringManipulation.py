@@ -72,9 +72,18 @@ print(sentence4.strip("I am student"))
 
 print("------------------------------------")
 
+sentence6 = "I love swimming during my free time"
+print(sentence6.strip("I love"))
+
 # Assignmenmt
 # 1. Understand the logic between the .split() and .rsplit() methods
 # 2. Look into the \r escape sequence and understand how it works with code examples
+
+print("------------------------------------")
+
+sentence5 = "I am a student that loves Python Programming\r at Zindua School"
+print(sentence5)
+
 # 3. Try and see if the issues we faced with \r and .split() are re;lated to python versions 
 # 4. Look into Finding and Replacing Strings 
 #       - Use the .find() method to find a string in a string
