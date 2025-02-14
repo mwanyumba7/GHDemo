@@ -61,31 +61,33 @@ Look into the following methids of formatting
         ii) Safe Substitution
 
 Why should you use 
- - `stt.format()
+ - `str.format()
  - f-strings
  - Template strings 
 """
 
-print("******************************8")
+print("******************************")
 
 #A. Positional Formatting
 #i) Reordering Values
 """Positional formatting allows you to reorder values inside a string using placeholders {}."""
 
 # Reordering values
-print("My name is {1}, and I am {0} years old.".format(25, "John"))
+print("My name is {1}, I am {0} years old, and I come from {2}.".format(25, "John", "Juja"))
 
 #ii) Named Placeholders
 """ Named placeholders allow you to use keywords instead of positions. """
 
-print("My name is {name}, and I am {age} years old.".format(name="John", age=25))
+print("My name is {name}, I am {age} years old, and I come from {Town}.".format(Town = "Juja", name="John", age=25))
 
 #iii) Format Specifiers
 """ Format specifiers help control decimal places, alignment, and padding."""
 
 # Displaying numbers with specific decimal places
+num1 = 3
 num = 3.14159
-print("Pi to 2 decimal places: {:.2f}".format(num))  
+print("Pi to 3 decimal places: {:.3f}".format(num)) #The :.3f rounds of the number i.e it does not give the floor or trancate the values
+print("num1 to 2 decimal places: {:.2f}".format(num1))
 
 # Padding numbers with zeros
 print("The number is {:05d}".format(42))  
