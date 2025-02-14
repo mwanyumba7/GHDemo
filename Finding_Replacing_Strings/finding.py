@@ -65,3 +65,90 @@ Why should you use
  - f-strings
  - Template strings 
 """
+
+print("******************************8")
+
+#A. Positional Formatting
+#i) Reordering Values
+"""Positional formatting allows you to reorder values inside a string using placeholders {}."""
+
+# Reordering values
+print("My name is {1}, and I am {0} years old.".format(25, "John"))
+
+#ii) Named Placeholders
+""" Named placeholders allow you to use keywords instead of positions. """
+
+print("My name is {name}, and I am {age} years old.".format(name="John", age=25))
+
+#iii) Format Specifiers
+""" Format specifiers help control decimal places, alignment, and padding."""
+
+# Displaying numbers with specific decimal places
+num = 3.14159
+print("Pi to 2 decimal places: {:.2f}".format(num))  
+
+# Padding numbers with zeros
+print("The number is {:05d}".format(42))  
+"""
+1. {} → This is a placeholder for formatting the number.
+2. :05d → This is a format specifier:
+3. 0 → Pads the number with leading zeros.
+4. 5 → Ensures the total width of the output is 5 characters.
+5. d → Specifies that the value is an integer (decimal format).
+6. format(42) → Inserts the number 42 into the placeholder.
+"""
+
+# B. Formatted String Literals (f-strings)
+#i) F-strings
+""" F-strings use an f before the string and allow direct variable interpolation. """
+
+name = "John"
+age = 25
+print(f"My name is {name}, and I am {age} years old.")
+
+#ii) Type Conversion
+"""F-strings allow automatic type conversion with !r, !s, and !a."""
+
+number = 42
+print(f"The number in repr format: {number!r}")  
+
+#iii) Format Specifiers (datetime)
+"""You can format dates inside f-strings. """
+
+from datetime import datetime
+now = datetime.now()
+print(f"Today's date: {now:%B %d, %Y}")
+"""
+f"Today's date: {now:%B %d, %Y}"
+
+Uses an f-string to format the date.
+%B → Full month name (e.g., "February").
+%d → Day of the month (e.g., "14").
+%Y → Full year (e.g., "2025")
+"""
+
+#iv) Escape Sequences in F-strings
+""" Escape sequences allow special characters inside f-strings. """
+
+print(f"She said, \"Hello!\"")  
+
+
+#C. Template Method of Formatting Strings
+"""The string.Template class provides an alternative to format() and f-strings."""
+
+from string import Template
+template = Template("Hello, $name!")
+print(template.substitute(name="John"))
+
+
+#i) Substitution
+"""If a value is missing, substitute() raises an error."""
+
+template = Template("Hello, $name!")
+# print(template.substitute())  # KeyError if 'name' is missing
+
+#ii) Safe Substitution
+"""safe_substitute() avoids errors by leaving placeholders unchanged."""
+
+template = Template("Hello, $name!")
+print(template.safe_substitute())  #Using safe_substitute() to Prevent Errors
