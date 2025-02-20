@@ -42,14 +42,35 @@ class CheckingAccount(BankAccount):
     def deposit(self, amount):
         self.balance += amount
 
-    def withdraw1(self, amount, fee=0):
+    def withdraw(self, amount, fee= 200):
         """Widhraws the amount from the balance with a fee"""
         if fee <= self.limit:
             BankAccount.withdraw(self, amount+fee)
         else:
             BankAccount.withdraw(self, amount+self.limit)
 
-    
+kai_cheque = CheckingAccount(1000, 100) 
+print(kai_cheque.balance)
+
+print("------------------------------------")
+kai_cheque.withdraw(50)
+print(kai_cheque.balance)
+
+print("-------------------------------------")
+
+bethany_acc = BankAccount(1000)
+bethany_acc.withdraw(50)
+print(bethany_acc.balance)
+
+print("------------------------------------")
+
+check_acc = CheckingAccount(1000, 100)
+check_acc.withdraw(50)
+print(check_acc.balance)
+
+
+
+print("--------------------------------------")
 
 # Constructing a new object of the SavingsAccount class
 acc = SavingsAccount(1000,20.7)
