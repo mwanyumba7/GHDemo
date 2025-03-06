@@ -54,3 +54,8 @@ Change the sort to only sort by `OrderNo` ascending.
 4. Format all other columns as Text.
 
 5. How many columns are formatted as text in our Sales table?
+
+# Pivot Tables 
+
+Look into Pivot Tables and create a Pivot Table In Excel 
+
