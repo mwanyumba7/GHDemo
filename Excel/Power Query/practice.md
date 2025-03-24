@@ -57,4 +57,43 @@ Next, re-order columns so that questionid is first.
 
 7. Your boss wanted to double-check what the last transformation done on this file to prepare it for loading. What is the formula displayed in the last applied step?
 
+# Outlier detection
+
+1. Review the column profile for question_1 to question_10 fields to identify any columns with values outside the accepted range of 1-10.
+
+2. The data entry team confirmed they found a typo in the score entry from one of the entries from question_1 to question_10, and they asked you to correct it.
+
+Any entered value greater than 10 with duplicated digits must be reduced to a single digit. (e.g., 66 should have been 6).
+
+<details>
+  <summary>Project Hint</summary>
+  Assess the Value distribution range to identify which question column has a value of “33”.
+  Using the Replace values function, enter 33 under Value to find and 3 under Replace with.
+</details>
+
+3. Keep your teammates informed of your error correction step by renaming the applied step just generated to "Corrected entry typo".
+
+4. Some entries were out of range, but not due to typos. Unhappy patients sometimes put a negative value as their score. Talk about an outlier!
+
+You've been instructed to replace these instances with a score of 1, the lowest value on the scale.
+<details>
+  <summary>Project Hint</summary>
+  Assess the Value distribution range to identify which question column has a value less than 1.
+  question_7 and question_10 both have negative values entered.
+  For question_7, replace -5 with 1 using the Replace Values function.
+  For question_10, replace -2 with 1 using the Replace Values function.
+</details>
+
+
+5. Rename the last two applied steps to specify that they were outlier corrections.
+
+6. How many survey respondents were extremely dissatisfied (score 1) for both Question 7 and Question 10?
+
+<details>
+  <summary>Project Hint</summary>
+  For question_7, ensure that you replace any value of “-5” with “1” using the Replace Values function.
+  For question_10, ensure that you replace any value of “-2” with “1” using the Replace Values function.
+  To filter on both question_7 and question_10, click on the arrow at the top right of each column and filter to a value of “1”.
+</details>
+
 
