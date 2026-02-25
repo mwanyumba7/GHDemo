@@ -124,6 +124,60 @@ def traffic_light(**kwargs):
 #2. In flexible arguments look into *args and **kwargs
 #3. Look into Lambda Functions
 
+# Default arguments are arguments that are passed to a function that have a default value. 
+# If the argument is not passed to the function, the default value is used. 
+# Flexible arguments are arguments that can take any number of values. 
+
+#example of default arguments:
+def order_1(size = "small", flavor = "vanilla"):
+    print(f"Your order is a {size} {flavor} cake")
+print(order_1("large", "chocolate"))
+
+#example 2
+def introduce(name,city="kigali"):
+    print(f"Hello, my name is {name} and I am from {city}")
+    
+introduce("Ryan")
+
+#fexible arguments are arguments that can take any number of values.
+def add_numbers(*args):
+    print(args) #this will print the values in a tuple
+    return sum(args)
+print(add_numbers(23,2,43,34,5))
+
+#example 2 **kwargs
+# unlike *args, **kwargs can take any number of keyword arguments and store them in a dictionary
+#syntax: def function_name(**kwargs):
+def patient_details(**kwargs):
+    print(kwargs) #this will print patient details in a dictionary
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")    
+patient_details(name = "John", age = 34, weight = 78)
+
+#lambda functions are anonymous functions that are defined using the lambda keyword
+#they are used for creating small, one-time and simple functions
+#syntax: lambda arguments: expression
+#example
+#lamda function used to obtain the squares of a number
+#simple lambada shortcut
+square = lambda x: (x*x)
+print (square(5))
+
+#simple lambda () mapping
+scores = [34, 56, 78, 90, 23, 45, 67]
+new_scores = list(map(lambda x: x + 5, scores))
+print(new_scores)
+
+#lambda function used to determine the value of passing grades in a class(simple lambda filter())
+scores = [34, 56, 78, 90, 23, 45, 67]
+passing = list(filter(lambda x: x > 50, scores))
+print(passing)
+
+
+
+#2. In flexible arguments look into *args and **kwargs:
+#3. Look into Lambda Functions
+
 #Assignment  - Abdhullahi
 #1. Look into default and Flexible arguments in functions
 #2. In flexible arguments look into *args and **kwargs
