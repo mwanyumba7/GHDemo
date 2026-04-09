@@ -1,17 +1,18 @@
-print("This is my First Function in Python")
 
-def square():
-    new_value = 8 ** 2
-    print(new_value)
+#print("This is my First Function in Python by Bethany")
 
-square()
+
+ #   print(new_value)
+ #   print(value2,"is half the entered number")
+
+#square()
 
 print("-------------------------------------")
 
 # A function that takes a value as an argument
 def divide_by_2(value):
     new_value = value / 2
-    print(new_value)
+#    print(new_value)
 
 divide_by_2(4)
 
@@ -26,7 +27,7 @@ def multiply_by_hundred(value):
 
 prediction = multiply_by_hundred(0.7598)
 
-print(prediction)
+#print(prediction)
 
 print("-------------------------------------")
 
@@ -50,7 +51,7 @@ def mutilpy_by_hundred(prediction1, prediction2, prediction3):
 
 predictions= mutilpy_by_hundred(0.7598, 0.9876, 0.679)
 
-print(predictions)
+#print(predictions)
 
 print("-------------------------------------")
 
@@ -66,8 +67,18 @@ def raise_two(value1, value2):
 
 result = raise_two(4, 5)
 
-print(result)
+#print(result)
 
 print("-------------------------------------")
 
-print(type(result))
+#print(type(result))
+#Write a function that takes key word arguments of employee details, containing(name, age, ID, salary)
+#Call the function for two employees
+def employee_details(**kwargs):
+    "Print employee details that is name, age, ID and salary"
+    for key, value in kwargs.items():
+     print(key + ":" + str(value))
+
+employee_details(name="Roy",age="18",ID="200045",salary="Ksh 40000")        
+employee_details(name="Dylan",age="22",ID="300046",salary="Ksh 50000")
+print("employee_details")        
